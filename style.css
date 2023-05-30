@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&family=Varela+Round&display=swap');
+body {
+    background-color: moccasin;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* ------------nav------------------ */
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+.brand{
+    display:flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+/* --------------Container------------------ */
+.container{
+    min-height: 68vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 60%;
+    border-radius: 12px;
+    background-image: url('img/bg.png');
+    background-size: cover;
+}
+.songlist h1{
+    margin: 10px 30px;
+}
+.songitem img{
+    width: 30%;
+    height: 30%;
+    margin-left: 5%;
+    margin-top: -18%;
+    border-radius: 50%;
+}
+.songitem span{
+    margin-top: 40%;
+    margin-left: 10%;
+    padding: 2%;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+}
+.songitem i{
+    width: 10px;
+    margin: 5%;
+}
+.songitem{
+    align-items: center;
+    display: flex;
+}
+.songlistplaying{
+    padding: 1%;
+}
+/* --------------queue------------------ */
+.queue{
+    background-color:black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.queue div{
+    width: 25%;
+    margin: 1% 5%;
+    color: black;
+    padding: 10px;
+    background-color: white;
+    border-radius: 12px;
+}
+.queue img{
+    width: 7%;
+    border-radius: 25%;
+    margin: 0px 20px;
+}
+.queue span{
+    margin-bottom: 20px;
+}
+.queue .timestamp{
+    font-size: small;
+    margin: 0px 0px 0 20px;
+    cursor: pointer;
+}
+.queue i{
+    margin: 5px 10px 0 10px;
+}
+.more{
+    text-decoration: none;
+    cursor: pointer;
+    padding: auto;
+}
+.more span{
+    margin-left: 10%;
+}
+/* ------Progressbar------------*/
+
+#progressBar{
+    margin-left: 10%;
+    margin-top: 2px;
+    width: 80%;
+    accent-color: rgb(61, 240, 61);
+    cursor: pointer;
+}
+#nowplaying{
+    position: fixed;
+    height: 100px;
+    background-color: black;
+    bottom: 0px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+#nowplaying h1{
+    position: absolute;
+    left: 80px;
+    top: 10px;
+}
+#nowplaying img{
+    width: 70px;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+.icons{
+    margin: 0% 7% 10px;
+    display: flex;
+}
+.icons i{
+    /* color: white; */
+    cursor: pointer;
+    margin-top: 1%;
+    width: 20px;
+    padding: 2px 50px;
+    align-items: center;
+}
+#nowplaying .timestamp{
+    margin-left: 85%;
+}
+#nowplaying img{
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+/*----Footer------------ */
+.copyright{
+    display: block;
+    width: 100%;
+    padding: 1%;
+    height: 200px;
+    background-color: white;
+    color: black;
+    align-items: center;
+}
+.copyright h1{
+    font-weight: 100;
+    font-size: large;
+    margin: 55px 37%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.copyright a{
+    text-decoration: none;
+    color: green;
+}
+
+/* --------------------Responsive--------------- */
+@media screen and (max-width: 720px) {
+    /* --------------container--------------------- */
+.container{
+    background-image: url(img/bg-small.png);
+    background-size: cover;
+    width: 90%;
+    
+}
+.songitem{
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.songitem img{
+    margin-top: 10%;
+    margin-left: 7%;
+    width: 35%;
+}
+.songitem span{
+    margin-top: 30%;
+}
+/* -----------queue----------------- */
+.queue{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.queue div{
+    width: 80%;
+    margin: 3%;
+}
+.copyright{
+    padding-bottom: 10%;
+}
+}

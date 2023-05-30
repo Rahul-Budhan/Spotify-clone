@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/icon" href="img/bg.png" style="border-radius: 50%;" />
+    <title>Private Spotify - My favourite music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ------------------------NAV--------------------------- -->
+    <nav>
+        <ul>
+            <li class="brand">
+                <img src="img/logo.png" alt="Spotify"><span>Spotify</span>
+            </li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <!-- ---------------mainContainer------------------------- -->
+    <div class="container">
+        <div class="songlist">
+            <h1>My Playlist</h1>
+            <div style="height: 80%;">
+                <div class="songitem con">
+                    <img src="img/covers/1.png" id="coverImage" alt="Cover Image">
+                    <span id="mainTitle">Aise Kaisay <i class="fa-regular fa-circle-play" style="color: #3df03d;"></i></span>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- -----------------------nowplaying--------------- -->
+    <div id="nowplaying">
+
+        <h1></h1>
+        <img src="img/playing.gif" id="gif" alt="playing GIF">
+        <div class="icons">
+            <!-- --------fontawsome icons----------------- -->
+            <i class="fas fa-2x fa-shuffle" id="shuffle"></i>
+            <i class="fas fa-2x fa-step-backward" id="previous"></i>
+            <i class="fas fa-2x fa-play" id="masterPlay"></i>
+            <i class="fas fa-2x fa-step-forward" id="next"></i>
+            <i class="fas fa-2x fa-repeat" id="repeat"></i>
+        </div>
+        <input type="range" name="range" id="progressBar" value="0" min="0" max="100">
+
+
+
+    </div>
+
+    <!-- ---------------------queue--------------------------- -->
+    <div class="queue">
+        <div class="songItem"><img alt="Cover Image">
+            <span>Song Name</span><i id="Aisay Kaisay" class=" songItemPlay fa-regular fa-circle-play"></i>
+        </div>
+        <div class="songItem"><img alt="Cover Image">
+            <span>Song Name</span><i id="Choo Lo" class=" songItemPlay fa-regular fa-circle-play"></i>
+        </div>
+        <div class="songItem"><img alt="Cover Image">
+            <span>Song Name</span><i id="Deewana Hai Dekho" class=" songItemPlay fa-regular fa-circle-play"></i>
+        </div>
+        <div class="songItem"><img alt="Cover Image">
+            <span>Song Name</span><i id="Kahaani" class=" songItemPlay fa-regular fa-circle-play"></i>
+        </div>
+        <div class="songItem"><img alt="Cover Image">
+            <span>Song Name</span><i id="Khwab" class=" songItemPlay fa-regular fa-circle-play"></i>
+        </div>
+        <div class="songItem"><img alt="Cover Image">
+            <span>Song Name</span><i id="Kya Karein" class=" songItemPlay fa-regular fa-circle-play"></i>
+        </div>
+        <div class="songItem"><img alt="Cover Image">
+            <span>Song Name</span><i id="Rihaee" class=" songItemPlay fa-regular fa-circle-play"></i>
+        </div>
+        <div class="songItem"><img alt="Cover Image">
+            <span>Song Name</span><i id="Shehron Ke Raaz" class=" songItemPlay fa-regular fa-circle-play"></i>
+        </div>
+        <div class="songItem"><img alt="Cover Image">
+            <span>Song Name</span><i id="Tere Hawaale" class=" songItemPlay fa-regular fa-circle-play"></i>
+        </div>
+        <div class="songItem"><img alt="Cover Image">
+            <span>Song Name</span><i id="Tere Hi Hum" class=" songItemPlay fa-regular fa-circle-play"></i>
+        </div>
+        <div class="songItem"><img alt="Cover Image">
+            <span>Song Name</span><i id="Udh Chaliye" class=" songItemPlay fa-regular fa-circle-play"></i>
+        </div>
+        <div class="songItem"><img alt="Cover Image">
+            <span>Song Name</span><i id="You Are My Soniya" class=" songItemPlay fa-regular fa-circle-play"></i>
+        </div>
+        <!-- <div class="more"><span>View More..</span></div> -->
+    </div>
+
+
+    <!-- ---------------footer---------------------------- -->
+    <footer>
+        <div class="copyright">
+            <h1>Copyright © <a href="https://www.linkedin.com/in/rahul-budhan-10bb531a6/" target="_blank">Rahul
+                    Budhan</a> 2023.</h1>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/e77466b2d6.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

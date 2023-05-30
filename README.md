@@ -50,6 +50,10 @@ CSS: The website's style and design can be customized by modifying the CSS file 
 
 JavaScript: The website's functionality can be customized by editing the JavaScript file (script.js). You can add new features, modify existing behavior, or enhance the user experience based on your requirements.
 
+## ScreenShots
+![Image Description](https://github.com/Rahul-Budhan/Spotify-clone/blob/main/img/screenshot%20(1).PNG)
+![Image Description](https://github.com/Rahul-Budhan/Spotify-clone/blob/main/img/screenshot%20(2).PNG)
+
 ## Feedback and Support
 If you encounter any issues or have suggestions for improvement, please feel free to contact me. I appreciate your feedback and will do my best to assist you.
 
